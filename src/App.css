@@ -70,3 +70,63 @@
     border: 1px solid black;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+  .products__single {
+      flex: 1 1 calc(48% - 20px); /* Adjust for two items per row */
+  }
+
+  .pagination {
+      padding: 8px; /* Reduce padding for pagination */
+      margin: 10px 0; /* Reduce margin for pagination */
+  }
+
+  .pagination > span {
+      padding: 10px 15px; /* Decrease padding for pagination buttons */
+      font-size: 14px; /* Decrease font size for pagination */
+  }
+
+  .cls {
+      justify-content: center;
+      align-items: center;
+  }
+
+  .inputfield {
+      width: 90%; /* Adjust width for better fit */
+      margin: 5px 0;
+  }
+
+  .label {
+      text-align: left;
+      font-size: 16px; /* Increase font size for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .products__single {
+      flex: 1 1 calc(100% - 20px); /* Adjust for one item per row */
+  }
+
+  .pagination {
+      padding: 6px; /* Further reduce padding for pagination */
+      margin: 8px 0; /* Further reduce margin for pagination */
+  }
+
+  .pagination > span {
+      padding: 8px 10px; /* Decrease padding for pagination buttons */
+      font-size: 12px; /* Further decrease font size for pagination */
+  }
+
+  .pagination__selected {
+      scale: 1.2; /* Keep the selected scale */
+  }
+
+  .inputfield {
+      padding: 8px;
+      margin: 5px 0;
+  }
+
+  .label {
+      font-size: 14px;
+  }
+}
